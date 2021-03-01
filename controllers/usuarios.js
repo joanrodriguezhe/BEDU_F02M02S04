@@ -9,6 +9,7 @@ const Usuario = require('../models/usuario')
 function crearUsuario(req, res) {
   // Instanciaremos un nuevo usuario utilizando la clase usuario
   var usuario = new Usuario(req.body)
+  console.log(usuario);
   res.status(201).send(usuario)
 }
 

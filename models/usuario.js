@@ -1,7 +1,7 @@
 // Usuario.js
 /** Clase que representa a un usuario de la plataforma*/
 class Usuario {
-    constructor(id, username, nombre, apellido, email, password, ubicacion, telefono, bio, fotos, tipo) {
+    constructor({id, username, nombre, apellido, email, password, ubicacion, telefono, bio, fotos, tipo}) {
       this.id = id;
       this.username = username;
       this.nombre = nombre;

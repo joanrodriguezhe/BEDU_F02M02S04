@@ -1,7 +1,7 @@
 // Solicitud.js
 /** Clase que representa una solicitud de adopción */
 class Solicitud {
-    constructor(id, idMascota, fechaDeCreacion, idUsuarioAnunciante, idUsuarioSolicitante, estado) {
+    constructor({id, idMascota, fechaDeCreacion, idUsuarioAnunciante, idUsuarioSolicitante, estado}) {
       this.id = id;
       this.idMascota = idMascota;
       this.fechaDeCreacion = fechaDeCreacion;

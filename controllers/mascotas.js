@@ -14,20 +14,21 @@ function crearMascota(req, res) {
 
 function obtenerMascotas(req, res) {
     // Simulando dos mascotas y respondiendolas
-    var mascota1 = new Mascota(1, 'Toby', 'Perro', 'FOTOS', 'Perro chido', 'blablabla')
-    var mascota2 = new Mascota(2, 'Peluchin', 'Perro', 'FOTOS', 'Perro chido', 'blablabla')
+    var mascota1 = new Mascota({ id: 1, nombre: 'Toby', categoria: 'Perro', fotos: 'FOTOS', descripcion: 'Perro chido', anunciante: 'Anunciante', ubicacion: 'ubicacion' })
+    var mascota2 = new Mascota({ id: 2, nombre: 'Peluchin', categoria: 'Perro', fotos: 'FOTOS', descripcion: 'Perro chido', anunciante: 'Anunciante', ubicacion: 'ubicacion' })
     res.send([mascota1, mascota2])
 }
 
 function obtenerMascota(req, res) {
-    var mascota1 = new Mascota(1, 'Toby', 'Perro', 'FOTOS', 'Perro chido', 'blablabla')
-    var mascota2 = new Mascota(2, 'Peluchin', 'Perro', 'FOTOS', 'Perro chido', 'blablabla')
+    console.log('hola')
+    var mascota1 = new Mascota({ id: 1, nombre: 'Toby', categoria: 'Perro', fotos: 'FOTOS', descripcion: 'Perro chido', anunciante: 'Anunciante', ubicacion: 'ubicacion' })
+    var mascota2 = new Mascota({ id: 2, nombre: 'Peluchin', categoria: 'Perro', fotos: 'FOTOS', descripcion: 'Perro chido', anunciante: 'Anunciante', ubicacion: 'ubicacion' })
     res.send([mascota1, mascota2].filter(mascota => mascota.id === +req.params.id))
 }
 
 function modificarMascota(req, res) {
     // simulando una mascota previamente existente que el cliente modifica
-    var mascota1 = new Mascota(req.params.id, 'Toby', 'FOTOS', 'Perro', 'Perro chido', 'blablabla')
+    var mascota1 = new Mascota({ id: 1, nombre: 'Toby', categoria: 'Perro', fotos: 'FOTOS', descripcion: 'Perro chido', anunciante: 'Anunciante', ubicacion: 'ubicacion' })
     var modificaciones = req.body
     mascota1 = { ...mascota1, ...modificaciones }
     res.send(mascota1)
