@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/joanrodriguezhe/BEDU_F02M02S04.git"
+    "url": "git+https://github.com/isc-joserodriguez/BEDU_F02M02S04.git"
   },
   "keywords": [
     "express",
@@ -19,9 +19,9 @@
   "author": "Jose Rodriguez",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/joanrodriguezhe/BEDU_F02M02S04/issues"
+    "url": "https://github.com/isc-joserodriguez/BEDU_F02M02S04/issues"
   },
-  "homepage": "https://github.com/joanrodriguezhe/BEDU_F02M02S04#readme",
+  "homepage": "https://github.com/isc-joserodriguez/BEDU_F02M02S04#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
